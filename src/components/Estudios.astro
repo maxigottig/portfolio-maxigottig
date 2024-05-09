@@ -1,0 +1,39 @@
+---
+import EstudiosItem from "./EstudiosItem.astro"
+const ESTUDIOS = [
+  {
+    date: "Diciembre 2022 a Febrero 2023",
+    title: "Desarrollo Web",
+    company: "Coderhouse",
+    description:
+      "El curso abarca la creación de sitios web estáticos, incluyendo análisis, diseño e implementación con HTML, CSS, GIT, SASS, Bootstrap y SEO, y enseña a subir el sitio a un servidor. Integré el Top 10 de mejores alumnos de la cursada.",
+      link: "https://www.coderhouse.com/ar/certificados/6408eb3541ce67000ec3bef2?lang=es",
+  },
+  {
+    date: "Febrero 2023 a Abril 2023",
+    title: "Javascript",
+    company: "Coderhouse",
+    description:
+      "El curso aborda los fundamentos del lenguaje de programación más utilizado, explorando sus herramientas, casos prácticos y aplicaciones modernas con AJAX. Se crean y aplican soluciones web interactivas en cualquier framework JavaScript.",
+      link: "https://www.coderhouse.com/ar/certificados/64753865d2204a0002d5b341?lang=es",
+  },
+  {
+    date: "Mayo 2023 a Junio 2023",
+    title: "React JS",
+    company: "Coderhouse",
+    description:
+      "En este curso avanzado se enseña la programación por componentes con JavaScript (JS), ES6 y el uso de flujos de datos. También se aprende sobre rutas con Firebase y el uso de virtual DOM con React JS. Finalizando la cursada se pueden crear aplicaciones SPA y trabajar con frameworks populares como React.",
+      link: "https://www.coderhouse.com/ar/certificados/64cc3d44dda828bfef88488c",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    ESTUDIOS.map((estudios) => (
+      <li class="">
+        <EstudiosItem {...estudios} />
+      </li>
+    ))
+  }
+</ol>
