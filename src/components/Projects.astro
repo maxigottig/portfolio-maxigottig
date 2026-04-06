@@ -11,6 +11,9 @@ import Javascript from "./icons/Javascript.astro"
 import Wordpress from "./icons/Wordpress.astro"
 import React from "./icons/React.astro"
 import Chatbot from "./icons/Chatbot.astro"
+import Typescript from "./icons/Typescript.astro"
+import Gemini from "./icons/Gemini.astro"
+
 
 const TAGS = {
   NEXT: {
@@ -58,8 +61,63 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Chatbot,
   },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-black text-white",
+    icon: Typescript,
+  },
+  GEMINI: {
+    name: "Gemini",
+    class: "bg-black text-white",
+    icon: Gemini,
+  },
 }
 const PROJECTS = [
+  {
+    title: "Demo Arkanoid",
+    description:
+      "Demo del Arkanoid sacado de un video de Midudev. En fase de desarrollo",
+    link: "https://maxigottig.github.io/arkanoid-demo/",
+    github: "https://github.com/maxigottig/arkanoid-demo.git",
+    image: "/projects/arkanoid.PNG",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, ],
+  },
+  {
+    title: "Portfolio profesional",
+    description:
+      "Ejemplo de portfolio profesional hecho con AI Studio",
+    link: "https://ai.studio/apps/7c1653aa-d77a-4d38-8197-130f92ef8a83",
+    github: "https://github.com/maxigottig/Portfolio-modelo.git",
+    image: "/projects/portfolio-modelo.png",
+    tags: [TAGS.TYPESCRIPT, TAGS.GEMINI, ],
+  },
+  {
+    title: "Bicicletería Ciclo",
+    description:
+      "Ejemplo de landing page de bicicletería hecho con AI Studio",
+    link: "https://ai.studio/apps/a80cfb93-33f5-4be9-a3a4-3bb5db4c4525",
+    github: "https://github.com/maxigottig/bicicleteria-ciclo.git",
+    image: "/projects/bicicleteria-modelo.PNG",
+    tags: [TAGS.TYPESCRIPT, TAGS.GEMINI, ],
+  },
+  {
+    title: "Once Express Ferretería",
+    description:
+      "Ejemplo de landing page de ferretería hecho con AI Studio",
+    link: "https://ai.studio/apps/a8e37d1f-aecb-4cb4-8906-32c8bf931488",
+    github: "https://github.com/maxigottig/once-express-ferreteria.git",
+    image: "/projects/ferreteria-modelo.PNG",
+    tags: [TAGS.TYPESCRIPT, TAGS.GEMINI, ],
+  },
+  {
+    title: "Confitería Maison",
+    description:
+      "Ejemplo de landing page de confitería hecho con AI Studio",
+    link: "https://ai.studio/apps/7ab0772f-8421-4bea-a43c-808687d9cac4",
+    github: "https://github.com/maxigottig/confiteria-maison.git",
+    image: "/projects/confiteria-modelo.PNG",
+    tags: [TAGS.TYPESCRIPT, TAGS.GEMINI, ],
+  },
   {
     title: "GL Bombas y Motores",
     description:
